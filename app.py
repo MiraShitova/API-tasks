@@ -30,7 +30,7 @@ class Item(Resource):
         items = [item for item in items if item['name'] != name]
         return {'message': 'Item deleted'}
 
-# Маршрутизація для ресурсу
+# Маршрутизація для ресурсу 
 api.add_resource(Item, '/item/<string:name>', '/item')
 
 if __name__ == '__main__':
